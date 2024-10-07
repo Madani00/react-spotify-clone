@@ -174,6 +174,7 @@ export default function Body({ headerBackground }) {
   );
 }
 
+
 const Container = styled.div`
   .playlist {
     margin: 0 2rem;
