@@ -14,7 +14,7 @@ export default function App() {
         // const token = hash.substring(1).split("&")[0].split("=")[1];
         const params = new URLSearchParams(hash.substring(1));
         const token = params.get("access_token");
-        dispatch({action: reducerCases.SET_TOKEN, token});
+        dispatch({type: reducerCases.SET_TOKEN, token});
       }
     }, [token, dispatch]);   // 3
   return (

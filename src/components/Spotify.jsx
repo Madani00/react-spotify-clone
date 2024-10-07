@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import Sidebar from "./Sidebar";
+import Sidebar from "./MenuPanel";
 import styled from "styled-components";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Footer from "./FooterSection";
+import Navbar from "./Navigationbar";
 import axios from "axios";
 import { useStateProvider } from "../utils/StateProvider";
 import Body from "./Body";
