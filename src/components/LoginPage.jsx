@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import './css/loginpage.css'
 
 export default function Login() {
 
@@ -28,55 +28,55 @@ export default function Login() {
     )}&response_type=token&show_dialog=true`;
   };
   return (
-    <Container>
+    <div className="loginpage">
       <img
         src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Black.png"
         alt="spotify"
       />
-      <Title>Welcome to Spotify Clone</Title>
-      <Subtitle>Connect to your Spotify account to get started</Subtitle>
+      <h1>Welcome to Spotify Clone</h1>
+      <h5>Connect to your Spotify account to get started</h5>
       <button onClick={IfClick}>Log In</button>
-    </Container>
+    </div>
   );
 }
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(170deg, #1db954, #191414);
-  img {
-    height: 20vh;
-  }
-  Button {
-    padding: 0.8rem 4rem;
-    border-radius: 5rem;
-    background-color: #1db954;
-    color: #fff;
-    border: none;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
+// const Container = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   width: 100vw;
+//   background: linear-gradient(170deg, #1db954, #191414);
+//   img {
+//     height: 20vh;
+//   }
+//   Button {
+//     padding: 0.8rem 4rem;
+//     border-radius: 5rem;
+//     background-color: #1db954;
+//     color: #fff;
+//     border: none;
+//     font-size: 1.1rem;
+//     cursor: pointer;
+//     transition: background-color 0.3s;
 
-    &:hover {
-      background-color: #1ed760;
-    }
-  }
-`;
+//     &:hover {
+//       background-color: #1ed760;
+//     }
+//   }
+// `;
 
 
-const Title = styled.h1`
-  color: #fff;
-  margin-top: 2rem;
-  margin-bottom: 0rem;
+// const Title = styled.h1`
+//   color: #fff;
+//   margin-top: 2rem;
+//   margin-bottom: 0rem;
 
-`;
+// `;
 
-const Subtitle = styled.p`
-  color: #b3b3b3;
-  margin-bottom: 1rem;
-`;
+// const Subtitle = styled.p`
+//   color: #b3b3b3;
+//   margin-bottom: 1rem;
+// `;
 

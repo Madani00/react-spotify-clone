@@ -1,0 +1,40 @@
+.loginpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(170deg, #1db954, #191414);
+  Button {
+    padding: 0.8rem 4rem;
+    border-radius: 5rem;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #1ed760;
+    }
+  }
+  img {
+    height: 20vh;
+  }
+}
+
+
+h1 {
+  font-size: 210%;
+  color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 0rem;  
+}
+  
+h5 {
+  font-size: 90%;
+  color: #b3b3b3;
+  margin-bottom: 1rem;  
+}
