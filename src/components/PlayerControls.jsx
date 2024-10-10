@@ -7,9 +7,9 @@ import {
 } from "react-icons/bs";
 import { CgPlayTrackNext, CgPlayTrackPrev } from "react-icons/cg";
 import { FiRepeat } from "react-icons/fi";
-import { useStateProvider } from "../utils/StateProvider";
+import { useStateProvider } from "../utility/StateProvider";
 import axios from "axios";
-import { reducerCases } from "../utils/Cnsts";
+import { reducerCases } from "../utility/Cnsts";
 export default function PlayerControls() {
   const [{ token, playerState }, dispatch] = useStateProvider();
 

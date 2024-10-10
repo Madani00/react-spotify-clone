@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useEffect } from "react";
-import styled from "styled-components";
-import { reducerCases } from "../utils/Cnsts";
-import { useStateProvider } from "../utils/StateProvider";
+import { reducerCases } from "../utility/Cnsts";
+import { useStateProvider } from "../utility/StateProvider";
+import './css/playlists.css'
 
 export default function Playlists() {
   const [{ token, playlists }, dispatch] = useStateProvider();
@@ -29,7 +29,7 @@ export default function Playlists() {
     dispatch({ type: reducerCases.SET_PLAYLIST_ID, selectedPlaylistId });
   };
   return (
-    <Container>
+    <div className="playlists">
       <ul>
         {playlists.map(({ name, id }) => {
           return (
@@ -39,35 +39,8 @@ export default function Playlists() {
           );
         })}
       </ul>
-    </Container>
+      </div>
   );
 }
 
-const Container = styled.div`
-  color: #b3b3b3;
-  height: 100%;
-  overflow: hidden;
-  ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    height: 55vh;
-    max-height: 100%;
-    overflow: auto;
-    &::-webkit-scrollbar {
-      width: 0.7rem;
-      &-thumb {
-        background-color: rgba(255, 255, 255, 0.6);
-      }
-    }
-    li {
-      transition: 0.3s ease-in-out;
-      cursor: pointer;
-      &:hover {
-        color: white;
-      }
-    }
-  }
-`;
+

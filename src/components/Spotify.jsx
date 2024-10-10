@@ -4,9 +4,9 @@ import styled from "styled-components";
 import Footer from "./FooterSection";
 import Navbar from "./Navigationbar";
 import axios from "axios";
-import { useStateProvider } from "../utils/StateProvider";
+import { useStateProvider } from "../utility/StateProvider";
 import Body from "./Body";
-import { reducerCases } from "../utils/Cnsts";
+import { reducerCases } from "../utility/Cnsts";
 
 export default function Spotify() {
   const [{ token }, dispatch] = useStateProvider();

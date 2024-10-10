@@ -1,9 +1,9 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import { useStateProvider } from "../utils/StateProvider";
+import { useStateProvider } from "../utility/StateProvider";
 import { AiFillClockCircle } from "react-icons/ai";
-import { reducerCases } from "../utils/Cnsts";
+import { reducerCases } from "../utility/Cnsts";
 export default function Body({ headerBackground }) {
   const [{ token, selectedPlaylist, selectedPlaylistId }, dispatch] =
     useStateProvider();

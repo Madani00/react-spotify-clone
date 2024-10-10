@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import axios from "axios";
-import { useStateProvider } from "../utils/StateProvider";
-import { reducerCases } from "../utils/Cnsts";
+import { useStateProvider } from "../utility/StateProvider";
+import { reducerCases } from "../utility/Cnsts";
 export default function CurrentTrack() {
   const [{ token, currentPlaying }, dispatch] = useStateProvider();
   useEffect(() => {
